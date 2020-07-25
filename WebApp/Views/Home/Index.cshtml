@@ -1,0 +1,35 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Lets check your text (Add file or enter some text)</p>
+    <form>
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-5">
+                    <div class="card">
+                        <div class="card-header">Upload File</div>
+                        <div class="card-body">
+                            <input type="file" id="File" name="file">
+                            <button id="CheckFile">Check File</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-5">
+                    <div class="card">
+                        <div class="card-header">Check Input</div>
+                        <div class="card-body">
+                            <input type="text" id="TextBox" name="name" value="" maxlength="1000" />
+                            <button id="CheckButton">File Check</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="Results">
+        
+    </div>
+</div>
