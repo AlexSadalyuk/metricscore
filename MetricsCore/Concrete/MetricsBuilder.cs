@@ -14,7 +14,7 @@ namespace MetricsCore.Concrete
             _services = services;
         }
 
-        public IMetricsBuilder Add(MetricCaller caller)
+        public IMetricsBuilder AddMetrics(MetricCaller caller)
         {
             if (caller == null)
             {
@@ -38,7 +38,7 @@ namespace MetricsCore.Concrete
 
             MetricCaller mr = new MetricCaller(name, service => ActivatorUtilities.GetServiceOrCreateInstance<T>(service));
 
-            return Add(mr);
+            return AddMetrics(mr);
         }
     }
 }
